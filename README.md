@@ -1,2 +1,2 @@
-# AndroidWare
+# Android
 Android Files for Apache Cordova 
