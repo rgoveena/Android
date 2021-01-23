@@ -1,0 +1,8 @@
+Creating the project:  cordova create ApplicationEvents_BatteryStatusDemo com.ucsc.applicationEvents_BatteryStatusDemo ApplicationEvents_BatteryStatusDemo
+Got to the project folder : cd ApplicationEvents_BatteryStatusDemo/
+Adding the platform: cordova platform add android
+Adding the plugin :  
+				1) cordova plugin add org.apache.cordova.console
+				2) cordova plugin add org.apache.cordova.dialogs
+				3) cordova plugin add org.apache.cordova.battery-status
+Open the Webstorm and open the project's www folder.
