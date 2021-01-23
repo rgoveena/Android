@@ -1,0 +1,8 @@
+Creating the project:  cordova create ApplicationEvents_NetworkStatusDemo com.ucsc.applicationEvents_NetworkStatusDemo ApplicationEvents_NetworkStatusDemo
+Got to the project folder : cd ApplicationEvents_NetworkStatusDemo/
+Adding the platform: cordova platform add android
+Adding the plugin :  
+				1) cordova plugin add org.apache.cordova.console
+				2) cordova plugin add org.apache.cordova.dialogs
+				3) cordova plugin add org.apache.cordova.network-information
+Open the Webstorm and open the project's www folder.
