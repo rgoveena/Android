@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+
+    <title>Mind Reader Magic</title>
+
+    <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map_holder { height: 100%; width: 100%; }
+    </style>
+</head>
+<body>
+
+
+<div data-role="page" id="map_holder">
+
+        <div data-role="header">
+        <h1>Mind Reader</h1>
+        </div>
+
+
+    <div data-role="main" class="ui-content">
+
+        <!--  <a href="#map_holder" data-role="button" data-iconpos="right" data-icon="gear" data-theme="a" onclick="app.searchLoc()" >SearchLoc</a>  -->
+        <a href="#map_holder" data-role="button" data-iconpos="right" data-icon="gear" data-theme="a" onclick="app.login()" >login</a>
+        <a href="#map_holder" data-role="button" data-iconpos="right" data-icon="gear" data-theme="a" onclick="app.mainFunc()" >mainFunc</a>
+        <a href="#map_holder" data-role="button" data-iconpos="right" data-icon="gear" data-theme="a" onclick="app.home()" >home</a>
+
+        <!--  Future Implementation - Disabled button usage
+                 <a href="#map_holder" data-role="button" class="ui-disabled" data-iconpos="right" data-icon="arrow-l" data-theme="a" onclick="app.projInfo()" >projInfo</a>
+
+                 <!--  Future Implementation
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="c" data-inline="true">Plus</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="minus" data-iconpos="notext" data-theme="c" data-inline="true">Minus</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="c" data-inline="true">Delete</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="c" data-inline="true">Arrow left</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="c" data-inline="true">Arrow right</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-theme="c" data-inline="true">Arrow up</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="arrow-d" data-iconpos="notext" data-theme="c" data-inline="true">Arrow down</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="check" data-iconpos="notext" data-theme="c" data-inline="true">Check</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="gear" data-iconpos="notext" data-theme="c" data-inline="true">Gear</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="c" data-inline="true">Refresh</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="forward" data-iconpos="notext" data-theme="c" data-inline="true">Forward</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="back" data-iconpos="notext" data-theme="c" data-inline="true">Back</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="grid" data-iconpos="notext" data-theme="c" data-inline="true">Grid</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="star" data-iconpos="notext" data-theme="c" data-inline="true">Star</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="c" data-inline="true">Bars</a>
+                 <a href="#" class="ui-disabled" data-role="button" data-icon="edit" data-iconpos="notext" data-theme="c" data-inline="true">Edit</a>
+                 -->
+<hr>
+
+
+
+
+
+    <div data-role="footer"
+    <p> Mind Reader Magic </p>
+    <li>Framework used:JQMobile</li>
+    <li>Developed By: Govi Rajagopal</li>
+    <li>Last Modified:11-01-2014 </li> <br>
+        <a href="#" data-role="button" data-icon="alert" data-iconpos="notext" data-theme="c" data-inline="true">Alert</a>
+        <a href="#" data-role="button" data-icon="info" data-iconpos="notext" data-theme="c" data-inline="true">Info</a>
+        <a href="#" data-role="button" data-icon="home" data-iconpos="notext" data-theme="c" data-inline="true">Home</a>
+        <a href="#" data-role="button" data-icon="search" data-iconpos="notext" data-theme="c" data-inline="true">Search</a>
+</div>
+
+</div>
+<!--Let's include the required JavaScript for the Google Maps API within the head tag. Append your API key into the query string in the script src attribute.-->
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGUrQiyc0nEZ7afQOC94o1iIMlIhH3n8o&sensor=true"></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+
+</script>
+</body>
+</html>

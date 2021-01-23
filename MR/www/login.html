@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        User Validation  : 2nd Program
+    </title>
+
+    <script "javascript">
+
+    function validate()
+    {
+    alert(form.username.value)
+    alert(document.getelementbyId(username).value);
+    alert(form.password.value)
+    if(form.username.value == "sample" && form.password.value =="password")
+    {
+    alert("User Validated ");
+    continue();
+    }
+    else
+    {
+    alert("Incorrect Username or Password" );
+    }
+
+    }
+    </script>
+    </head>
+
+    <body>
+    <text align=center>
+            <form name="form" onsubmit="validate()">
+            Username <input type="text" name="username" />
+            <br />
+            <br />
+            Password <input type="password" name="password" maxlength=10 />
+
+            <input type="submit" />
+            </form>
+    </text>
+    </body>
