@@ -1,0 +1,14 @@
+Creating the project: cordova create ConnectionAPIDemo com.ucsc.connectionAPIDemo  ConnectionAPIDemo 
+Got to the project folder : cd ConnectionAPIDemo/
+Adding the platform: cordova platform add android
+Adding the plugin :  
+				1) cordova plugin add org.apache.cordova.network-information
+				2) cordova plugin add org.apache.cordova.console
+				3) cordova plugin add org.apache.cordova.dialogs
+Open the Webstorm and open the project's www folder.
+
+
+
+
+
+

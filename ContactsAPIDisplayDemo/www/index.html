@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <title>Contacts API DEMO</title>
+</head>
+<body>
+<div data-role="page" id="contacts-home">
+    <div data-role="header">
+        <h1>Welcome To My Homepage</h1>
+    </div>
+    <!--
+            Within the content div element, create a new unordered list block.
+            Set the id attribute to contactList, the data-role attribute to listview, and the data-inset attribute to true.-->
+    <div data-role="main" class="ui-content">
+        <ul id="contactList" data-role="listview" data-inset="true">
+        </ul>
+
+    </div>
+    <div data-role="footer">
+        <h1>Footer Text</h1>
+    </div>
+</div>
+
+<div data-role="page" id="contact-info">
+
+    <div id="contact_header" data-role="header">
+        <a href="#contacts-home" id="back" data-icon="back"
+           data-direction="reverse">Back</a>
+        <h1></h1>
+    </div>
+
+    <div id="contact_content" data-role="main">
+
+        <div data-role="fieldcontain">
+            <label for="givenName">First Name:</label>
+            <input type="text" name="givenName"
+                   id="givenName" disabled />
+        </div>
+        <div data-role="fieldcontain">
+            <label for="familyName">Last Name:</label>
+            <input type="text" name="familyName"
+                   id="familyName" disabled />
+        </div>
+        <div data-role="fieldcontain">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone"
+                   id="phone" disabled />
+        </div>
+        <div data-role="fieldcontain">
+            <label for="email">Email:</label>
+            <input type="text" name="email"
+                   id="email" disabled  />
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript">
+    app.initialize();
+</script>
+</body>
+</html>
