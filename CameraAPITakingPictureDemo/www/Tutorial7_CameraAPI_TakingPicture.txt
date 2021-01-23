@@ -1,0 +1,8 @@
+Creating the project: cordova create CameraAPITakingPictureDemo com.cordovaprogramming.cameraAPITakingPictureDemo cameraAPITakingPictureDemo
+Got to the project folder : cd CameraAPITakingPictureDemo/
+Adding the platform: cordova platform add android
+Adding the plugin :  
+				1) cordova plugin add org.apache.cordova.camera
+				2) cordova plugin add org.apache.cordova.console
+				3) cordova plugin add org.apache.cordova.dialogs
+Open the Webstorm and open the project's www folder.

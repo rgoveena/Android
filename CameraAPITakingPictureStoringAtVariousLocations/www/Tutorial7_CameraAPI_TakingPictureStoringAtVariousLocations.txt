@@ -1,0 +1,11 @@
+Creating the project: cordova create CameraAPITakingPictureStoringAtVariousLocations com.cordovaprogramming.cameraAPITakingPictureStoringAtVariousLocations CameraAPITakingPictureStoringAtVariousLocations
+Got to the project folder : cd CameraAPITakingPictureStoringAtVariousLocations/
+Adding the platform: cordova platform add android
+Adding the plugin :  
+				1) cordova plugin add org.apache.cordova.camera
+				2) cordova plugin add org.apache.cordova.console
+				3) cordova plugin add org.apache.cordova.dialogs
+Open the Webstorm and open the project's www folder.
+
+
+CameraAPITakingPictureStoringAtVariousLocations
